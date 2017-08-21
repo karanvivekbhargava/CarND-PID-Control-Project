@@ -2,8 +2,8 @@
 Self-Driving Car Engineer Nanodegree Program
 
 <p align="center">
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YVRTyDhrYMo
-" target="_blank"><img src="http://img.youtube.com/vi/YVRTyDhrYMo/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=v21Bg81c8kc
+" target="_blank"><img src="http://img.youtube.com/vi/v21Bg81c8kc/0.jpg" 
 alt="NMPC" width="480" height="360" border="10" /></a>
 </p>
 
