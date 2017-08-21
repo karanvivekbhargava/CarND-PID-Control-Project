@@ -33,6 +33,7 @@ Kd = 1.0;
 Ki = 0.001;
 ```
 Only the steering was controlled and the throttle was manupulated such that if the car is at more angle from the middle of the road then it gets slower. If it follows the road then it gets faster.
+
 ---
 
 ## Dependencies
