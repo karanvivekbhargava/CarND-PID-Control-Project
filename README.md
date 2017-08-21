@@ -15,6 +15,9 @@ Implementation of a PID controller in C++ to maneuver the vehicle around the tra
 
 ---
 ## The significance of P, I, D components in the implementation.
+### Proportional component:
+### Integral component:
+### Derivative component:
 
 ## Hyperparameter Selection
 
