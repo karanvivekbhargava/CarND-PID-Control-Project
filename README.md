@@ -40,7 +40,10 @@ Kp = 0.2;
 Kd = 1.0;
 Ki = 0.001;
 ```
-Only the steering was controlled and the throttle was manupulated such that if the car is at more angle from the middle of the road then it gets slower. If it follows the road then it gets faster.
+Only the steering was controlled and the throttle was manupulated such that if the car is at more angle from the middle of the road then it gets slower. If it follows the road then it gets faster. Its given by the following equation. I have taken `throttlemax` to be 0.4.
+```
+Throttle = fabs(throttlemax*cos(fabs(angle)));
+```
 
 ---
 
