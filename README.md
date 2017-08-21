@@ -3,6 +3,17 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Introduction
+
+Implementation of a PID controller in C++ to maneuver the vehicle around the track
+
+---
+## The significance of P, I, D components in the implementation.
+
+## Hyperparameter Selection
+
+---
+
 ## Dependencies
 
 * cmake >= 3.5
