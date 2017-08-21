@@ -15,9 +15,17 @@ Implementation of a PID controller in C++ to maneuver the vehicle around the tra
 
 ---
 ## The significance of P, I, D components in the implementation.
-### Proportional component: 
+### Proportional component:
+
+The proportional component by itself drives the car in the road, however even with careful tuning, it fails at sharp turns. This is because the response wrt the error is proportional in nature.
+
 ### Integral component:
+
+The integral components primary use is to remove the system bias if any. The integral component depends both on time and the accumulated error, so if the error is accumulating over a long time then the controller would respond better since its response is biased with the integral component of the error. However, it takes time for the integral component to fully kick in. I didn't find much bias in the simulator, so a small `Ki` value did the trick!
+
 ### Derivative component:
+
+
 
 ## Hyperparameter Selection
 The parameters were selected manually with the following technique:
