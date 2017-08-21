@@ -15,12 +15,24 @@ Implementation of a PID controller in C++ to maneuver the vehicle around the tra
 
 ---
 ## The significance of P, I, D components in the implementation.
-### Proportional component:
+### Proportional component: 
 ### Integral component:
 ### Derivative component:
 
 ## Hyperparameter Selection
+The parameters were selected manually with the following technique:
+1. Make `Kp`, `Ki` and `Kd` zero.
+2. Adjust `Kp` to make the car follow the road as close as possible, with steady oscillations.
+3. Once `Kp` is adjusted, start with `Kd` as 20 times `Kp` and adjust till you dampen out the oscillations as close as possible.
+4. We now have stable `Kp` and `Kd` values, adjust `Ki` mildly to get a better response. Typically low values like 0.001 work well.
 
+After going through this procedure my final values were:
+```
+Kp = 0.2;
+Kd = 1.0;
+Ki = 0.001;
+```
+Only the steering was controlled and the throttle was manupulated such that if the car is at more angle from the middle of the road then it gets slower. If it follows the road then it gets faster.
 ---
 
 ## Dependencies
