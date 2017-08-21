@@ -27,6 +27,8 @@ The integral components primary use is to remove the system bias if any. The int
 
 As mentioned earlier, the proportional controller fails at tight turns, this is exactly where the derivative component shines. The difference in the errors gives rise to additional response which helps the vehicle recover from sharp turns very easily.
 
+---
+
 ## Hyperparameter Selection
 The parameters were selected manually with the following technique:
 1. Make `Kp`, `Ki` and `Kd` zero.
